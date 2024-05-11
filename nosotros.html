@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JardInk</title>
+	
+    <link rel="stylesheet" type="text/css" href="CSS/estilosjardink.css">
+	
+    <link href="css/css1.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<a name="top"></a>
+	<a name= "closelogin"></a>
+	
+	
+	
+						<!--AQUI INICIA EL MENU NAV-->
+<div id="head">
+	<div id="alinea_cabeza">
+		<div id="logo"><a href="index.html"><img src="images/jardink.png" width="150" alt=""/></a></div>
+		
+	<div id="perfil"><a data-toggle="modal" data-target="#ir_login1"><img src="images/perfil.png" width="70" alt=""/></a></div>
+
+		<div class="desplegable">
+		<ul class="nav justify-content-center">
+			<li class="nav-item dropdown contacto">
+				<a href="contacto.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu</a>
+				<div class="dropdown-menu">
+					
+					<a href="index.html" class="dropdown-item">Home</a>
+					<a href="nosotros.html" class="dropdown-item">Nosotros</a>
+					<a href="artistas_tatto.html" class="dropdown-item">Artistas del Tatto</a>
+					<a href="contacto.html" class="dropdown-item">Contacto</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="nav" class="menormal">
+		<ul class="nav justify-content-center ">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item nosotros"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+				<li class="nav-item artistas"><a href="artistas_tatto.html" class="nav-link">Artistas del Tatto</a></li>
+				<li class="nav-item dropdown contacto"><a href="contacto.html" class="nav-link">Contacto</a>
+
+				</li>
+			</ul>
+	</div>
+		</div></div>
+						<!--AQUI TERMINA EL MENU NAV-->
+	
+	
+	
+						<!--AQUI INICIA LA PORTADA-->
+	
+<nav class="jumbotron" id="portada">
+	<h1 class="display-1" style="font-size: 10vw; line-height: 8rem">&nbsp;Tattoo Studio | El jardink<br><small style="font-size: 0.22em;  font-family: Candara;">Somos un estudio de tatuajes con la meta de promover el arte</small></h1>
+</nav>
+						<!--AQUI TERMINA LA PORTADA-->
+	
+	
+	
+	<div id="arrow">
+	<a href="#top"><h1 style="font-size: 2.8vw;">&#9651;</h1></a></div>
+	
+<div class="container">
+	
+ 			<!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+
+<div class="modal fade" id="ir_login1" tabindex="-1" role="dialog" aria-labelledby="ir_login1Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="ir_loginTitle">Inicia sesión:</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<form class="col">
+		<div >
+			<div class="form-group">
+			
+			<label for="">Nombre o correo de Usuario</label>
+			<input type="email" placeholder="usuario@mail.com" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+				
+				<label for="">Contraseña</label>
+				<input type="password" placeholder="********" class="form-control">
+				
+			</div>
+			
+			
+			<div class="form-check">
+      			<input class="form-check-input" type="checkbox" value="">
+      			<label class="form-check-label" for="">
+        		Mantener sesión abierta
+      			</label> 
+				
+			</div>
+			<p style="font-size: 10pt"><a data-toggle="modal" data-target="#creacuenta" data-dismiss="modal" aria-label="Close">*Todavía no tienes una cuenta, crea una <u>aquí</u></a></p>
+			
+		</div>
+		</form>
+				
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+    						
+			<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+	
+	
+	
+ 			<!--AQUI EMPIEZA VENTANA EMERGENTE DEL CREAR CUENTA (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+	<div class="modal fade" id="creacuenta" tabindex="-1" role="dialog" aria-labelledby="creacuenta" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="creacuentaTitle">Crea una nueva sesión:</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<form class="col">
+		<div >
+			<div class="form-group">
+			
+			<label for="">Nombre completo</label>
+			<input type="text" placeholder="@usuario" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+			
+			<label for="">Correo</label>
+			<input type="email" placeholder="usuario@mail.com" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+				
+				<label for="">Contraseña</label>
+				<input type="password" placeholder="********" class="form-control">
+				
+			</div>
+			
+			
+			
+			<p style="font-size: 10pt"><a data-toggle="modal" data-target="#ir_login1" data-dismiss="modal" aria-label="Close">*Ya tienes una cuenta, ingresa a tu sesión <u>aquí</u></a></p>
+			
+		</div>
+		</form>
+				
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Inicia ya</button>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+	
+	 <div class="description2 card">
+        <div class="card-header"><a class="card-link" data-toggle="collapse" data-parent="#acord1" href="#que_es"><h2>¿Qué es El Jardink? _____________________</h2></a></div><br>
+        <div id="que_es" class="collapse show">
+			<div class="card-body"><p>
+           Somos un estudio de tatuajes que al mismo tiempo busca ayudar a <b>la difusión de artistas locales y sus obras</b>, exhibiéndolas dentro del estudio, funcionando al mismo tiempo como una "galería" de arte local
+        </p></div>
+			</div>
+    </div>
+	<div class="description2 card">
+       <div class="card-header"><a class="card-link" data-toggle="collapse" data-parent="#acord2" href="#objetivo"> <h2>Objetivos ____________________________</h2></a></div><br>
+        <div id="objetivo" class="collapse ">
+			<div class="card-body"><p>
+           En Jardink buscamos convertirnos en uno de los estudios más reconocidos en la ciudad de Puebla y Cholula. Ayudando a promover el talento de los nuevos tatuadores.
+        </p>
+		<p>
+		Para esto contaremos con un equipo de artistas altamente calificados y ofrecetemos instalaciones de alta calidad, cómodas para los clientes y para los colaboradores, manteniendo los precios justos en cada trabajo. 
+		</p>
+		<p>
+		Además brindar un ambiente seguro y relajado dentro del estudio, creando una comunidad que ayude a la promoción y difusión positiva del estudio.
+		</p>
+				</div>
+			</div>
+    </div>
+	<div class="description2 card">
+         <div class="card-header"><a class="card-link" data-toggle="collapse" data-parent="#acord3" href="#propos"><h2>Nuestros propósitos ___________________</h2></a></div><br>
+        <div id="propos" class="collapse">
+			<div class="card-body"><p>
+           <b>Inspirar, nutrir y dar sentido al espíritu y la cultura humana</b>a través del arte.
+        </p>
+		
+    </div><br>
+	<div class="description2">
+	<p style="text-align: center; font-size: 28pt"><b><i>"El arte no es algo que se pueda tomar y dejar, es necesario para vivir"</i></b></p>
+		</div>
+				<!--SECCIÓN DE INFORMACION, INSTALACIONES
+    <div class="datos">
+        <h2 style="color: white; text-shadow: 3pt 3pt 4pt black;
+">Nuestras Instalaciones ______________________</h2> 
+        
+         <img src="images/img8.png" alt="Imagen 4">
+        
+         <img src="images/studio (2).png" alt="Imagen 4">
+      
+		 <img src="images/studio (4).png" alt="Imagen 4">
+
+    </div>--></div>
+			</div>
+
+    <div class="description">			<!--MAPS-->
+
+        <h2>Visítanos _________________________________</h2><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d396.3987605390116!2d-98.26841089163364!3d19.05486258571903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc75577fd6503%3A0x13574f3d44c09f3d!2sEl%20JardInk!5e0!3m2!1ses-419!2smx!4v1708590040746!5m2!1ses-419!2smx" width="100%" height="450" style="border: 0px; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+	
+</div>
+<div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item "><a class="page-link" href="index.html" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item "><a class="page-link" href="index.html">1</a></li>
+ 				<li class="page-item active"><a class="page-link" href="nosotros.html">2</a></li>
+ 				<li class="page-item"><a class="page-link" href="artistas_tatto.html">3</a></li>
+				<li class="page-item"><a class="page-link" href="contacto.html">4</a></li>
+ 				<li class="page-item"><a class="page-link" href="artistas_tatto.html">Next</a></li>
+ 			</ul>
+		</div>
+<footer> 
+    <p>Derechos reservados &copy; 2024 Estudio de Tatuajes</p>
+</footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+</body>
+</html>

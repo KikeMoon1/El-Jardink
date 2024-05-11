@@ -1,0 +1,676 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<title>Artistas del tatto</title>
+<link href="css/css1.css" rel="stylesheet" type="text/css">
+<link href="css/estilosjardink.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>	<a name="top"></a>
+	<a name= "closelogin"></a>
+	
+	
+	
+						<!--AQUI INICIA EL MENU NAV-->
+<div id="head">
+	<div id="alinea_cabeza">
+		<div id="logo"><a href="index.html"><img src="images/jardink.png" width="150" alt=""/></a></div>
+		
+	<div id="perfil"><a data-toggle="modal" data-target="#ir_login1"><img src="images/perfil.png" width="70" alt=""/></a></div>
+
+		<div class="desplegable">
+		<ul class="nav justify-content-center">
+			<li class="nav-item dropdown contacto">
+				<a href="contacto.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu</a>
+				<div class="dropdown-menu">
+					
+					<a href="index.html" class="dropdown-item">Home</a>
+					<a href="nosotros.html" class="dropdown-item">Nosotros</a>
+					<a href="artistas_tatto.html" class="dropdown-item">Artistas del Tatto</a>
+					<a href="contacto.html" class="dropdown-item">Contacto</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="nav" class="menormal">
+		<ul class="nav justify-content-center ">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item nosotros"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+				<li class="nav-item artistas"><a href="artistas_tatto.html" class="nav-link">Artistas del Tatto</a></li>
+				<li class="nav-item dropdown contacto"><a href="contacto.html" class="nav-link">Contacto</a>
+
+				</li>
+			</ul>
+	</div>
+		</div></div>
+						<!--AQUI TERMINA EL MENU NAV-->
+	
+	
+	
+						<!--AQUI INICIA LA PORTADA-->
+	
+<nav class="jumbotron" id="portada">
+	<h1 class="display-1" style="font-size: 10vw; line-height: 8rem">&nbsp;Tattoo Studio | El jardink<br><small style="font-size: 0.22em;  font-family: Candara;">Conoce a nuestros artistas del tatuaje y mira su trabajo</small></h1>
+</nav>
+						<!--AQUI TERMINA LA PORTADA-->
+	
+	
+	
+	<div id="arrow">
+	<a href="#top"><h1 style="font-size: 2.8vw;">&#9651;</h1></a></div>
+	
+<div class="container">
+	
+ 			<!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+
+<div class="modal fade" id="ir_login1" tabindex="-1" role="dialog" aria-labelledby="ir_login1Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="ir_loginTitle">Inicia sesión:</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<form class="col">
+		<div >
+			<div class="form-group">
+			
+			<label for="">Nombre o correo de Usuario</label>
+			<input type="email" placeholder="usuario@mail.com" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+				
+				<label for="">Contraseña</label>
+				<input type="password" placeholder="********" class="form-control">
+				
+			</div>
+			
+			
+			<div class="form-check">
+      			<input class="form-check-input" type="checkbox" value="">
+      			<label class="form-check-label" for="">
+        		Mantener sesión abierta
+      			</label> 
+				
+			</div>
+			<p style="font-size: 10pt"><a data-toggle="modal" data-target="#creacuenta" data-dismiss="modal" aria-label="Close">*Todavía no tienes una cuenta, crea una <u>aquí</u></a></p>
+			
+		</div>
+		</form>
+				
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+    						
+			<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+	
+	
+	
+ 			<!--AQUI EMPIEZA VENTANA EMERGENTE DEL CREAR CUENTA (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+	<div class="modal fade" id="creacuenta" tabindex="-1" role="dialog" aria-labelledby="creacuenta" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="creacuentaTitle">Crea una nueva sesión:</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<form class="col">
+		<div >
+			<div class="form-group">
+			
+			<label for="">Nombre completo</label>
+			<input type="text" placeholder="@usuario" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+			
+			<label for="">Correo</label>
+			<input type="email" placeholder="usuario@mail.com" class="form-control">
+			
+			</div>
+			
+			<div class="form-group">
+				
+				<label for="">Contraseña</label>
+				<input type="password" placeholder="********" class="form-control">
+				
+			</div>
+			
+			
+			
+			<p style="font-size: 10pt"><a data-toggle="modal" data-target="#ir_login1" data-dismiss="modal" aria-label="Close">*Ya tienes una cuenta, ingresa a tu sesión <u>aquí</u></a></p>
+			
+		</div>
+		</form>
+				
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Inicia ya</button>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+	
+	
+	
+
+	<div id="body1">
+		
+	<div class="contenido">
+	<h2 style="font-size: 25pt; line-height: 10pt">El Crew _______________________________</h2>
+	  <div id="crew">
+		  				<!--GRID DEL CREW-->
+		  <a name="backtocrew"></a>
+		<div id="pic">
+			<!--1RA COLUMNA-->
+		  <div class="foto"><img src="images/ix_Mesa de trabajo 1.png" alt="artista1">
+			</div>
+		  <div class="name"><h3>!x</h3>
+			</div>
+		  <div class="work"><!--<a data-toggle="modal" data-target="#trabajo_1">Su trabajo___</a>-->
+			  <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#trabajo_1">Su trabajo___</button>
+			</div>
+		  <div class="insta"><a href="https://www.instagram.com/ixart.t?igsh=dWFldWczOGJ0czYy" target="_blank"><img src="images/intsaba.png"></a>
+			</div>
+			<!--2DA COLUMNA-->
+			<div class="foto"><img src="images/royone-07.png" alt="artista2">
+			</div>
+		  <div class="name"><h3>Roy One</h3>
+			</div>
+		  <div class="work"> <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#trabajo_2">Su trabajo___</button>
+			</div>
+		  <div class="insta"><a href="https://www.instagram.com/roy._one/" target="_blank"><img src="images/intsaba.png"></a>
+			</div>
+			<!--3RA COLUMNA-->
+			<div class="foto" style="width: 88%;"><img src="images/ozo_Mesa de trabajo 1.png" alt="artista3">
+			</div>
+		  <div class="name"><h3>ELERRE</h3>
+			</div>
+		  <div class="work"> <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#trabajo_3">Su trabajo___</button>
+			</div>
+		  <div class="insta"><a href="https://www.instagram.com/erre.tat/" target="_blank"><img src="images/intsaba.png"></a>
+			</div>
+			<!--4TA COLUMNA-->
+			<div class="foto"><img src="images/ozo-02.png" alt="artista4">
+			</div>
+		  <div class="name"><h3>OZO</h3>
+			</div>
+		  <div class="work"> <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#trabajo_4">Su trabajo___</button>
+			</div>
+		  <div class="insta"><a href="https://www.instagram.com/ozoconzeta/" target="_blank"><img src="images/intsaba.png"></a>
+			</div>
+			
+		  </div>			<!--FIN DEL GRID DEL CREW-->
+							  
+		  <!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+<!--<div id="trabajo_3" class= "modal">
+	<div class="ventana3">
+	<a name="trabajo_3"></a>
+		<div style="font-size: 20pt; margin-top: -10px; margin-bottom: 20px; float: right; "><a href="#backtocrew">x</a></div><br>
+		
+		<div class="foto_in"><img src="images/ozo_Mesa de trabajo 1.png" alt="artista_3">
+			</div><br>
+		<h3>ELERRE</h3>
+		<p>Proveniente de la enigmática ciudad de Puebla, el tatuador especializado en serpientes estilo blackwork, Luis, es reconocido por su habilidad única para capturar la serpiente en toda su majestuosidad y misterio en la piel de sus clientes. Con un enfoque meticuloso en el blackwork, Luis fusiona la elegancia natural de las serpientes con la intensidad gráfica de este estilo, creando obras que evocan un sentido de poder y belleza intrínsecos. Su dominio del contraste y la profundidad le permite dar vida a diseños serpenteantes que parecen cobrar vida en la piel de quienes los llevan. Cada tatuaje de Luis es una obra maestra única, una celebración de la fuerza y la fascinación de estas criaturas icónicas, dejando una impresión duradera en aquellos que tienen el privilegio de llevar sus creaciones.</p><br><br>
+<div class="imglink2">
+    <table>
+        <tr>
+            <td><img src="images/elerre_Mesa de trabajo 1.png" width="250" alt="Imagen 1"></td>
+            <td><img src="images/elerre-05.png" width="250" alt="Imagen 2"></td>
+            <td><img src="images/elerre-03.png" width="250" alt="Imagen 3"></td>
+        </tr>
+        <tr>
+            <td><img src="images/elerre-04.png" width="250" alt="Imagen 4"></td>
+            <td><img src="images/elerre-06.png" width="250" alt="Imagen 5"></td>
+            <td><img src="images/elerre-02.png" width="250" alt="Imagen 6"></td>
+        </tr>
+       
+    </table>
+	
+</div>
+		
+	</div></div>-->
+		  
+	<div class="modal fade" id="trabajo_3" tabindex="-1" role="dialog" aria-labelledby="trabajo_3Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content ventana3">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="trabajo_3Title" style="color: white;">ELERRE</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<div class="foto_in"><img src="images/ozo_Mesa de trabajo 1.png" alt="artista_3">
+			</div><br><br>
+<!--		<h3>ELERRE</h3>-->
+		<p style="margin-top: 20px;">Proveniente de la enigmática ciudad de Puebla, el tatuador especializado en serpientes estilo blackwork, Luis, es reconocido por su habilidad única para capturar la serpiente en toda su majestuosidad y misterio en la piel de sus clientes. Con un enfoque meticuloso en el blackwork, Luis fusiona la elegancia natural de las serpientes con la intensidad gráfica de este estilo, creando obras que evocan un sentido de poder y belleza intrínsecos. Su dominio del contraste y la profundidad le permite dar vida a diseños serpenteantes que parecen cobrar vida en la piel de quienes los llevan. Cada tatuaje de Luis es una obra maestra única, una celebración de la fuerza y la fascinación de estas criaturas icónicas, dejando una impresión duradera en aquellos que tienen el privilegio de llevar sus creaciones.</p>
+		  	  
+		  
+		  <div class="row imglink2">
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/C1IT9T9O-cp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre_Mesa de trabajo 1.png" alt="Imagen 1"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CyOwkBXOGLO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre-05.png" alt="Imagen 2"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre-03.png" alt="Imagen 3"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre-04.png" alt="Imagen 4"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre-06.png" alt="Imagen 5"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/elerre-02.png" alt="Imagen 6"></a></div>
+			
+						
+		  </div>
+				
+      <div class="modal-footer">
+         <div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item "><a class="page-link" data-toggle="modal" data-target="#trabajo_1" data-dismiss="modal" aria-label="Close">1</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">2</a></li>
+ 				<li class="page-item active"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">3</a></li>
+				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_4" data-dismiss="modal" aria-label="Close">4</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_4" data-dismiss="modal" aria-label="Close">Next</a></li>
+ 			</ul>
+		</div>
+      </div>
+    
+
+</div>
+	  </div></div></div>	  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+		    <!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+<!--
+<div id="trabajo_2" class= "modal">
+	<div class="ventana3">
+	<a name="trabajo_2"></a>
+		<div style="font-size: 20pt; margin-top: -10px; margin-bottom: 20px; float: right; "><a href="#backtocrew">x</a></div><br>
+		
+		<div class="foto_in"><img src="images/royone-07.png" alt="artista_2">
+			</div><br>
+		<h3>Roy One</h3>
+		<p >Con raíces profundamente arraigadas en la cultura mexicana y una pasión ardiente por el arte del tatuaje, el tatuador mexicano de estilo blackwork, Roy one, es reconocido por su habilidad para fusionar la rica herencia visual de su país con la estética distintiva del blackwork. Su destreza técnica y su atención meticulosa a los detalles le permiten crear obras impresionantes que combinan elementos tradicionales mexicanos con motivos contemporáneos en un estilo distintivo y audaz. Cada tatuaje de Juan cuenta una historia única, imbuida de la energía vibrante de México y la profundidad emocional del blackwork, dejando una marca indeleble en quienes tienen el privilegio de llevar sus creaciones en la piel.</p><br><br>
+<div class="imglink2">
+    <table>
+        <tr>
+            <td><img src="images/royone-02.png" width="250" alt="Imagen 1"></td>
+            <td><img src="images/royone-06.png" width="250" alt="Imagen 2"></td>
+            <td><img src="images/royone_Mesa de trabajo 1.png" width="250" alt="Imagen 3"></td>
+        </tr>
+        <tr>
+            <td><img src="images/royone-04.png" width="250" alt="Imagen 4"></td>
+            <td><img src="images/royone-05.png" width="250" alt="Imagen 5"></td>
+            <td><img src="images/royone-03.png" width="250" alt="Imagen 6"></td>
+        </tr>
+      
+    </table>
+	
+</div>
+		
+	</div></div>
+-->
+		  
+		  
+		  <div class="modal fade" id="trabajo_2" tabindex="-1" role="dialog" aria-labelledby="trabajo_2Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content ventana3">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="trabajo_2Title" style="color: white;">ROY ONE</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<div class="foto_in"><img src="images/royone-07.png" alt="artista_2">
+			</div><br><br>
+<!--		<h3>Roy One</h3>-->
+		<p style="margin-top: 20px;">Con raíces profundamente arraigadas en la cultura mexicana y una pasión ardiente por el arte del tatuaje, el tatuador mexicano de estilo blackwork, Roy one, es reconocido por su habilidad para fusionar la rica herencia visual de su país con la estética distintiva del blackwork. Su destreza técnica y su atención meticulosa a los detalles le permiten crear obras impresionantes que combinan elementos tradicionales mexicanos con motivos contemporáneos en un estilo distintivo y audaz. Cada tatuaje de Juan cuenta una historia única, imbuida de la energía vibrante de México y la profundidad emocional del blackwork, dejando una marca indeleble en quienes tienen el privilegio de llevar sus creaciones en la piel.</p>
+		  	  
+		  
+		  <div class="row imglink2">
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/C1IT9T9O-cp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone-02.png" alt="Imagen 1"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CyOwkBXOGLO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone-06.png" alt="Imagen 2"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone_Mesa de trabajo 1.png" alt="Imagen 3"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone-04.png" alt="Imagen 4"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone-05.png" alt="Imagen 5"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/royone-03.png" alt="Imagen 6"></a></div>
+			
+						
+		  </div>
+				
+      <div class="modal-footer">
+         <div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_1" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item "><a class="page-link" data-toggle="modal" data-target="#trabajo_1" data-dismiss="modal" aria-label="Close">1</a></li>
+ 				<li class="page-item active"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">2</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">3</a></li>
+				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_4" data-dismiss="modal" aria-label="Close">4</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">Next</a></li>
+ 			</ul>
+		</div>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+		    <!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+<!--
+<div id="trabajo_1" class= "modal">
+	<div class="ventana3">
+	<a name="trabajo_1"></a>
+		<div style="font-size: 20pt; margin-top: -10px; margin-bottom: 20px; float: right; "><a href="#backtocrew">x</a></div><br>
+		
+		<div class="foto_in"><img src="images/ix_Mesa de trabajo 1.png" alt="artista_1">
+			</div><br>
+		<h3>!x</h3>
+		<p>Desde las profundidades de su imaginación, emerge una artista del tatuaje mexicana cuyos diseños transportan a los espectadores a mundos psicodélicos y oníricos. , !x especializada en blackwork psicodélico, encuentra su inspiración en los reinos de sus propios sueños. Con una paleta de tinta negra, traza líneas y formas que desafían la realidad, creando composiciones que exploran los límites de la percepción y la mente. Cada tatuaje de Sofía es una ventana a su mundo interior, donde las imágenes abstractas cobran vida para contar historias de misterio y exploración. Su habilidad para plasmar lo etéreo en la piel la convierte en una maga del tatuaje, dejando una huella duradera en aquellos que se aventuran a llevar sus visiones consigo.</p><br><br>
+<div class="imglink2">
+    <table>
+        <tr>
+            <td><img src="images/ix-02.png" width="250" alt="Imagen 1"></td>
+            <td><img src="images/ix-03.png" width="250" alt="Imagen 2"></td>
+            <td><img src="images/ix-04.png" width="250" alt="Imagen 3"></td>
+        </tr>
+        <tr>
+            <td><img src="images/ix-05.png" width="250" alt="Imagen 4"></td>
+            <td><img src="images/ix-06.png" width="250" alt="Imagen 5"></td>
+            <td><img src="images/ix-07.png" width="250" alt="Imagen 6"></td>
+        </tr>
+        <tr>
+            <td><img src="images/instapost-07.png" width="250" alt="Imagen 7"></td>
+            <td><img src="images/instapost-08.png" width="250" alt="Imagen 8"></td>
+            <td><img src="images/instapost-09.png" width="250" alt="Imagen 9"></td>
+        </tr>
+    </table>
+	
+</div>
+		
+	</div></div>
+-->
+		  
+		  
+<div class="modal fade" id="trabajo_1" tabindex="-1" role="dialog" aria-labelledby="trabajo_1Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content ventana3">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="trabajo_1Title" style="color: white;">!x</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<div class="foto_in"><img src="images/ix_Mesa de trabajo 1.png" alt="artista_1">
+			</div><br><br>
+<!--		<h3>!x</h3>-->
+		<p style="margin-top: 20px;">Desde las profundidades de su imaginación, emerge una artista del tatuaje mexicana cuyos diseños transportan a los espectadores a mundos psicodélicos y oníricos. , !x especializada en blackwork psicodélico, encuentra su inspiración en los reinos de sus propios sueños. Con una paleta de tinta negra, traza líneas y formas que desafían la realidad, creando composiciones que exploran los límites de la percepción y la mente. Cada tatuaje de Sofía es una ventana a su mundo interior, donde las imágenes abstractas cobran vida para contar historias de misterio y exploración. Su habilidad para plasmar lo etéreo en la piel la convierte en una maga del tatuaje, dejando una huella duradera en aquellos que se aventuran a llevar sus visiones consigo.</p>
+		  	  
+		  
+		  <div class="row imglink2">
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/C1IT9T9O-cp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-02.png" alt="Imagen 1"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CyOwkBXOGLO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-03.png" alt="Imagen 2"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-04.png" alt="Imagen 3"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-05.png" alt="Imagen 4"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-06.png" alt="Imagen 5"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ix-07.png" alt="Imagen 6"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/instapost-07.png" alt="Imagen 7"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/instapost-08.png" alt="Imagen 8"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/instapost-09.png" alt="Imagen 9"></a></div>
+			
+		  </div>
+				
+      <div class="modal-footer">
+        <div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item disabled"><a class="page-link" data-toggle="modal" data-target="#" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item active"><a class="page-link" data-toggle="modal" data-target="#trabajo_1" data-dismiss="modal" aria-label="Close">1</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">2</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">3</a></li>
+				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_4" data-dismiss="modal" aria-label="Close">4</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">Next</a></li>
+ 			</ul>
+		</div>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+    						
+			<!--AQUI TERMINA LA VENTANA EMERGENTE-->  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+    <!--AQUI EMPIEZA VENTANA EMERGENTE DEL LOGIN (RECUERDA COPIAR EL "A" DEL ENLACE Y LOS "NAME" PARA CERRAR Y ABRIR-->
+<!--
+<div id="trabajo_4" class= "modal">
+	<div class="ventana3">
+	<a name="trabajo_4"></a>
+		<div style="font-size: 20pt; margin-top: -10px; margin-bottom: 20px; float: right; "><a href="#backtocrew">x</a></div><br>
+		
+		<div class="foto_in"><img src="images/ozo-02.png" alt="artista_2">
+			</div><br>
+		<h3>OZO</h3>
+		<p>Desde las callesde Puebla emerge un talentoso tatuador dedicado a plasmar la belleza y la intriga de la naturaleza en la piel de sus clientes. Inspirado por la diversidad biológica de México y el mundo, Juan transforma su pasión por los insectos y los animales en obras de arte vivientes. Su estilo fusiona la precisión del realismo con elementos estilizados, creando tatuajes que transmiten tanto la esencia como la estética de estas criaturas fascinantes. Ya sean escarabajos relucientes, mariposas etéreas o leones majestuosos, cada tatuaje de Juan es una celebración de la biodiversidad y una conexión tangible con el reino animal, dejando una impresión duradera en quienes tienen el honor de llevar sus creaciones.</p><br><br>
+<div class="imglink2">
+    <table>
+        <tr>
+            <td><img src="images/ozo-08.png" width="250" alt="Imagen 1"></td>
+            <td><img src="images/ozo-07.png" width="250" alt="Imagen 2"></td>
+            <td><img src="images/ozo-06.png" width="250" alt="Imagen 3"></td>
+        </tr>
+        <tr>
+            <td><img src="images/ozo-05.png" width="250" alt="Imagen 4"></td>
+            <td><img src="images/ozo-04.png" width="250" alt="Imagen 5"></td>
+            <td><img src="images/ozo-03.png" width="250" alt="Imagen 6"></td>
+        </tr>
+      
+    </table>
+	
+</div>
+		
+	</div></div>
+-->
+		   <div class="modal fade" id="trabajo_4" tabindex="-1" role="dialog" aria-labelledby="trabajo_4Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+	  
+    <div class="modal-content ventana3">
+		
+      <div class="modal-header">
+        <h2 class="modal-title" id="trabajo_4Title" style="color: white;">OZO</h2>
+        <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		
+		
+      <div class="modal-body ">
+	
+		<div class="foto_in"><img src="images/ozo-02.png" alt="artista_2">
+			</div><br><br>
+<!--		<h3>OZO</h3>-->
+		<p style="margin-top: 40px;">Desde las callesde Puebla emerge un talentoso tatuador dedicado a plasmar la belleza y la intriga de la naturaleza en la piel de sus clientes. Inspirado por la diversidad biológica de México y el mundo, Juan transforma su pasión por los insectos y los animales en obras de arte vivientes. Su estilo fusiona la precisión del realismo con elementos estilizados, creando tatuajes que transmiten tanto la esencia como la estética de estas criaturas fascinantes. Ya sean escarabajos relucientes, mariposas etéreas o leones majestuosos, cada tatuaje de Juan es una celebración de la biodiversidad y una conexión tangible con el reino animal, dejando una impresión duradera en quienes tienen el honor de llevar sus creaciones.</p>
+		  	  
+		  
+		  <div class="row imglink2">
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/C1IT9T9O-cp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-08.png" alt="Imagen 1"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CyOwkBXOGLO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-07.png" alt="Imagen 2"></a></div>
+			
+			
+            <div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-06.png" alt="Imagen 3"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-05.png" alt="Imagen 4"></a></div>
+			
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-04.png" alt="Imagen 5"></a></div>
+			
+			<div class="col-10 col-md-4 col-sm-6"><a href="https://www.instagram.com/p/CxbsDZxMGiu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="blank"><img src="images/ozo-03.png" alt="Imagen 6"></a></div>
+			
+						
+		  </div>
+				
+      <div class="modal-footer">
+         <div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item "><a class="page-link" data-toggle="modal" data-target="#trabajo_1" data-dismiss="modal" aria-label="Close">1</a></li>
+ 				<li class="page-item"><a class="page-link" data-toggle="modal" data-target="#trabajo_2" data-dismiss="modal" aria-label="Close">2</a></li>
+ 				<li class="page-item "><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">3</a></li>
+				<li class="page-item active"><a class="page-link" data-toggle="modal" data-target="#trabajo_4" data-dismiss="modal" aria-label="Close">4</a></li>
+ 				<li class="page-item disabled"><a class="page-link" data-toggle="modal" data-target="#trabajo_3" data-dismiss="modal" aria-label="Close">Next</a></li>
+ 			</ul>
+		</div>
+      </div>
+    
+
+</div>
+	  </div></div></div>
+    						<!--AQUI TERMINA LA VENTANA EMERGENTE-->
+		  
+		  
+		  
+		</div>
+		</div>	<!--DIV CREW (NO SE PA QUE PUSE ESO XD)-->
+	</div>	<!--DIV CONTENIDO-->
+</div>	<!--DIV BODY1-->
+<div class="pagina">
+			<ul class="pagination">
+ 				<li class="page-item"><a class="page-link" href="nosotros.html" data-dismiss="modal" aria-label="Close">Previous</a></li>
+ 				<li class="page-item "><a class="page-link" href="index.html">1</a></li>
+ 				<li class="page-item"><a class="page-link" href="nosotros.html">2</a></li>
+ 				<li class="page-item active"><a class="page-link" href="artistas_tatto.html">3</a></li>
+				<li class="page-item"><a class="page-link" href="contacto.html">4</a></li>
+ 				<li class="page-item"><a class="page-link" href="contacto.html">Next</a></li>
+ 			</ul>
+		</div>
+<footer> 
+    <p>Derechos reservados &copy; 2024 Estudio de Tatuajes</p>
+</footer>
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+</body>
+</html>
