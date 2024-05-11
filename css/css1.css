@@ -1,0 +1,501 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@media only screen and (max-width: 1100px){
+	#arrow h1{font-size: 100vw;}
+}
+@media only screen and (max-width: 550px){
+	#logo img{width: 30vw!important;}
+	#logo{grid-column: 1/2!important; grid-row: 1/1!important;}
+	#perfil img{width: 20vw!important;}
+	#perfil {grid-column: 2/3; grid-row: 1/1;}
+/*	#alinea_cabeza{display: flex!important; flex-direction: column!important; flex-wrap: wrap!important;align-content: center!important;}*/
+	footer{height: 10vw!important;}
+	#arrow{display: none;}
+	.menormal{display: none!important;}
+	.desplegable{display: block!important;margin: auto!important; margin-top: 10px!important;}
+	#portada{background-size: 180%!important;}
+	.jumbotron h1{font-size: 22vw!important; line-height: 4rem!important;}
+}
+body { 		
+	font-family: Candara!important;
+    background-color: #0C0C0C!important; 
+    color: whitesmoke !important; 
+    margin: 0!important;
+            padding: 0!important;
+			font-size: 18pt!important;
+}
+#head{
+	background-color: #0C0C0C;
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#alinea_cabeza{
+	width: 80%;
+	display: grid;
+	grid-gap: 0px;
+	margin: auto;
+}
+
+#logo{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 100px;
+	display: table-cell;
+	grid-column: 1/2;
+	grid-row: 1/3;
+	text-align: center;
+	
+}
+#perfil img:hover{ opacity: 70%;
+}
+#logo img:hover{ opacity: 70%;
+}
+#perfil{
+	grid-column: 8/11;
+	grid-row: 1/1;
+	display: table-cell;
+	text-align: center;
+	vertical-align: bottom;
+	background-position: center;
+}
+#perfil img{ vertical-align: middle; margin: 15px auto; align-content: center; }
+.collapse{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.desplegable{
+	display: none;
+    background-color: #0C0C0C;
+    font-family: Candara;
+    font-size: 14pt;
+    color: #3161AD;
+    border-top: 4px solid #3161AD;
+/*    height: 50px;*/
+    width: 80%;
+/*    vertical-align: bottom;*/
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+/*    margin: auto auto auto 70px;*/
+
+    grid-column: 1/12;
+    grid-row: 2/2;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;	
+}
+#nav{
+    background-color: #0C0C0C;
+    font-family: Candara;
+    font-size: 14pt;
+    color: #3161AD;
+    border-top: 4px solid #3161AD;
+    height: 50px;
+    width: 80%;
+    display: table;
+    vertical-align: bottom;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto auto auto 70px;
+    grid-column: 2/8;
+    grid-row: 2/3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;	
+}
+#nav a, .desplegable a{
+	justify-content: center;
+	margin: 0px 20px;
+	align-content:  space-around;
+}
+#nav a:visited, .desplegable a:visited{
+    color: #3161AD;
+ }
+#nav a:link,  .desplegable a:link{
+	color: #3161AD;
+	text-decoration: none;	
+}
+#nav a:hover , .desplegable a:hover{
+    background-color: #3161AD;
+    color: whitesmoke;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#nav a:active .desplegable a:active{
+	color: #3161AD;
+	background-color: whitesmoke;	
+}
+
+.nosotros{
+	display: table-cell;
+	vertical-align: middle;
+	background-color: transparent;
+	padding: 0px 10px 0px 10px;
+	height: 50px;
+	
+}
+.artistas{
+	display: table-cell;
+
+	background-color:  transparent;
+		vertical-align: middle;
+	padding: 0px 10px 0px 10px;
+	height: 50px;
+
+}
+.contacto{
+	display: table-cell;
+padding: 0px 10px 0px 10px;
+	height: 50px;	
+
+	background-color:  transparent;
+		vertical-align: middle;
+
+}
+.cotiza{
+	display: table-cell;
+padding: 0px 10px 0px 10px;
+	height: 50px;	margin: 15px;
+		vertical-align: middle;
+	background-color:  transparent;
+}
+#portada{
+	background-image: url("../images/001.jpg");
+	background-size: 
+	100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-shadow: 3pt 3pt 4pt black;
+}
+.jumbotron{
+	color: white;
+	font-family: Parchment;
+	text-align: center;
+}
+#body1{
+	background-color: #0C0C0C;
+	color: #3161AD;
+	 font-family: Candara;
+	font-size: 14pt;
+	padding-top: 30px;
+}
+.contenido{
+		width: 80%;
+		margin: auto;
+		padding: 20px;
+		border-radius: 5px;
+	            max-width: 1100px;
+
+}
+#boton{
+	background-color: #0C0C0C;
+	padding: 10px;
+	width: 33%;
+	text-align: center;
+	color: whitesmoke;
+	border-radius: 20px;
+	display: table-cell;
+	float: right;
+	margin-top: -25px;
+}
+
+#boton a {
+	color: whitesmoke;
+	font-family: Candara;
+	font-size: 13pt;
+}
+#boton a:checked{
+	color: whitesmoke;
+}
+#boton a:hover{
+	background-color: #3161AD;
+	padding: 6px;
+	
+	border-radius: 20px;
+}
+
+#arrow{
+		transition: all 5.5s ease-in;
+
+	margin: 40px 0px;
+    background-color: #010101;
+    border-radius: 20px 0px 0px 20px;
+    float: right;
+    position: sticky;
+    top: 200px;
+    left: 20px;
+    padding: 20px 50px 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#arrow a:link{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#arrow a:visited{
+	color: whitesmoke;
+}
+#arrow a:hover{
+	opacity: 50%;
+}
+
+footer{
+	margin-top: 50px;
+	font-size: 14pt;
+/*	padding: 20px 80px 5px;*/
+	padding-top: 1vw;
+	color: whitesmoke;
+	text-align: center;
+	background-color: #3161AD;
+	height: 5vw;
+}
+
+/*---------------------BLOQUE DE AVATAR CREW---------------------*/
+
+#pic{
+	display: grid;
+	height: auto;
+	grid-gap: 10px;
+	margin-top: 45px;
+}
+.foto{
+	background-color: transparent;
+	grid-row: 1/5;
+	text-align: center;
+}
+.foto img{ width: 130%; vertical-align: middle; margin: auto auto auto -15px;; border-radius: 800px; border: none #3161AD 5px; box-shadow: 0px 0px 15px 1px #3161AD; max-width: 400px;}
+.name {
+	background-color: transparent;
+	grid-row: 5 / 8;
+	font-size: 20pt;
+    text-align: center;
+    color: whitesmoke;
+	margin-top: 5px;
+}
+.work {
+    background-color: transparent;
+    grid-row: 8/9;
+    font-size: 13pt;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: solid underline;
+    font-style: italic;
+	margin-top: 10px;
+}
+.work a{
+	color: whitesmoke;
+}
+.work a:hover{opacity: 70%;}
+.insta {
+	background-color: transparent;
+	grid-row: 9/11;
+	align-content: center;
+	justify-content: center;
+	text-align: center;	
+	object-fit: cover;
+	margin-top: 10px;
+	
+}
+.insta img{
+	width: 40px;
+	background-color: transparent;
+	vertical-align: middle;
+	object-fit: cover;
+}
+.insta a:hover img {
+	opacity: 0%;
+	object-fit: cover;
+}
+.insta a:hover::before {
+	transition: all .5s ease-in;
+	content: url("../images/instarrow.png");
+	opacity: 100%;
+    position: absolute;
+}
+/*---------------------CIERRE BLOQUE DE AVATAR CREW---------------------*/
+
+
+
+.modal-content{
+	font-family: Candara!important;
+	background-color: #0C0C0C!important;
+	border-radius: 20px!important;
+	padding: 20px 50px!important;
+	font-size: 14pt!important;
+	border: 5pt solid #3161AD!important;
+}
+.modal-footer .btn{
+	width: 100%;
+}
+#ir_login1:target{
+  opacity:1;
+  pointer-events: auto!important;
+}
+#trabajo_1:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#trabajo_2:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#trabajo_3:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#trabajo_4:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#user1{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+#password1{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+button{
+	background-color: #3161AD;
+	color: whitesmoke;
+	padding: 8px;
+	border-radius: 20px;
+	width: 100px;
+}
+form a{
+    color: whitesmoke;
+    text-decoration: none;	
+}
+form a:hover{
+	opacity: 70%;
+}
+#ir_login2:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#user_u{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+#password_u{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+#ape_u{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+#nom_u{
+	border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+.modal2{
+/*
+  background-color:rgba(12,12,12,0.8) ;
+  position:fixed;
+  top:0px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+*/
+	width: 80vw;
+}
+.ventana3{
+	font-family: Candara;
+	font-size: 16pt!important;
+    background-color: #0C0C0C;
+    border: 5pt solid #3161AD;
+	border-radius: 20px;
+    width: 90vw!important;
+    padding: 20px 30px;
+    margin: 3% auto;
+    position: relative;
+	color: whitesmoke;
+	
+}
+.ventana3 a{ color: whitesmoke; text-decoration: none;}
+.ventana3 a:hover{ opacity: 70%;}
+.ventana3 p{font-size: 10pt;}
+.imglink2 img{
+	/*min-width: 70%; max-width: 90%;*/ width: 100%; margin-top: 20px;
+}
+.imglink2{margin-top: 20px; align-content: center; text-align: center;}
+.foto_in{
+	background-color: transparent;
+	grid-row: 1/5;
+	text-align: center;
+	float: left;
+	margin-bottom: 20px;
+}
+.foto_in img{ width: 79%; vertical-align: middle; margin: auto auto auto -15px;; border-radius: 800px; border: none #3161AD 5px; box-shadow: 0px 0px 15px 1px #3161AD; max-width: 400px;}
+
+
+.formcontact{
+		border-radius: 10px;
+	height: 18pt;
+	background-color: #3161AD;
+	padding: 0 5px 0 5px;
+	color: whitesmoke;
+}
+::placeholder{
+	color: whitesmoke;
+	opacity: 60%;
+	vertical-align: middle;
+	margin: auto;
+}
+.form-range{
+	width: 100%;
+}
+.calif{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-align: right;
+}
+.btn{
+	width: 80%;
+	margin: auto;
+}
+.form-group button{
+	margin: auto;
+}
+.pagina{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 2vw;
+	color: rgba(12,12,12,1.00);
+}

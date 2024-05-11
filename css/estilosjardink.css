@@ -1,0 +1,98 @@
+        body {
+            font-family: Candara;
+            background-color: #0C0C0C; 
+            color: #fff; 
+            margin: 0;
+            padding: 0;
+			font-size: 18pt;
+        }
+        #Encabezado {
+            background-color: #0C0C0C; 
+            color: #fff;
+            text-align: left;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .description,
+.description2,
+        .imglink {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+        
+        .description h2,
+ .description2 h2,
+        .contenido h2 {
+            color: #3161AD;
+            margin-top: 0;
+        }
+.description2{
+margin-left: auto;
+	width: 90%;
+	background-color: transparent!important;
+}
+.description2 .card-header{
+    background-color: rgba(23,23,23,1.00);
+}
+.card-header:hover{ background-color:white!important;}
+.description p,
+.description2 p{
+	font-size: 15pt;
+}
+        .columnas {
+            display: flex;
+            justify-content: space-between;
+        }
+        .columnas .uno,
+        .columnas .dos,
+        .columnas .tres {
+            flex-basis: 30%;
+			
+        }
+.imglink{
+	border: 4px solid #3161AD; 
+	text-align: left;
+	display: table;
+	padding-bottom: 40px;
+	margin: auto;
+	width: 90%;
+}
+.imglink h3 {
+	color: #3161AD;
+	margin: 0px 5px 15px 5px;
+}
+.imglink a{
+    text-decoration: none;	
+}
+.imglink img:hover{opacity: 70%;}
+.imglink img {width: 100%; margin-bottom: 1rem;}
+.datos{
+    background-image: url("../images/bg2_Mesa de trabajo 1.png");
+    background-size: 100%;
+    background-position: 0px 0px;
+	font-family: Candara;
+
+	
+	margin-top: 50px;
+            padding: 25px 20px 20px 20px;
+            background-color: transparent;
+            border-radius: 5px;
+}
+.datos img {
+	margin: 35px 1%;
+	width: 30%;
+}
+
+    
